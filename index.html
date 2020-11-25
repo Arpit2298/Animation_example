@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>Animation</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .box {
+            margin: 10% 0 0 2%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            background-color: indianred;
+            animation-name: anime;
+            animation-duration: 5s;
+            animation-delay: 2S;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes anime {
+            0% {
+                border-radius: 50%;
+                background-color: gray;
+                position: relative;
+            }
+            5% {
+                transition-timing-function: ease-in;
+                left: 40px;
+                background-color: black;
+                border-radius: 50%;
+                transform: rotate(18deg);
+            }
+            10% {
+                background-color: black;
+                border-radius: 50%;
+                left: 80px;
+                transform: rotate(36deg);
+            }
+            15% {
+                background-color: brown;
+                border-radius: 50%;
+                left: 120px;
+                transform: rotate(54deg);
+            }
+            20% {
+                background-color: brown;
+                border-radius: 50%;
+                left: 160px;
+                transform: rotate(72deg);
+            }
+            25% {
+                background-color: fuchsia;
+                border-radius: 50%;
+                left: 200px;
+                transform: rotate(90deg);
+            }
+            30% {
+                background-color: fuchsia;
+                border-radius: 50%;
+                transform: rotate(108deg);
+                left: 240px;
+            }
+            35% {
+                background-color: fuchsia;
+                left: 280px;
+                border-radius: 50%;
+                transform: rotate(126deg);
+            }
+            40% {
+                left: 320px;
+                background-color: lawngreen;
+                border-radius: 50%;
+                transform: rotate(144deg);
+            }
+            45% {
+                background-color: lawngreen;
+                border-radius: 50%;
+                transform: rotate(162deg);
+                left: 360px;
+            }
+            50% {
+                background-color: indigo;
+                border-radius: 50%;
+                left: 400px;
+                transform: rotate(180deg);
+            }
+            55% {
+                background-color: indigo;
+                border-radius: 50%;
+                left: 440px;
+                transform: rotate(198deg);
+            }
+            60% {
+                background-color: gold;
+                border-radius: 50%;
+                transform: rotate(216deg);
+                left: 480px;
+            }
+            65% {
+                left: 520px;
+                background-color: gold;
+                border-radius: 50%;
+                transform: rotate(234deg);
+            }
+            70% {
+                left: 560px;
+                background-color: darkslateblue;
+                border-radius: 50%;
+                transform: rotate(252deg);
+            }
+            75% {
+                left: 600px;
+                background-color: darkslateblue;
+                border-radius: 50%;
+                transform: rotate(270deg);
+            }
+            80% {
+                left: 640px;
+                background-color: darkred;
+                border-radius: 50%;
+                transform: rotate(288deg);
+            }
+            85% {
+                left: 680px;
+                background-color: darkred;
+                border-radius: 50%;
+                transform: rotate(306deg);
+            }
+            90% {
+                left: 720px;
+                background-color: deepskyblue;
+                border-radius: 50%;
+                transform: rotate(324deg);
+            }
+            95% {
+                left: 760px;
+                background-color: deepskyblue;
+                border-radius: 50%;
+                transform: rotate(342deg) scale(2);
+            }
+            100% {
+                left: 800px;
+                background-color: crimson;
+                border-radius: 50%;
+                transform: rotate(360deg) translate(-800px) scale(2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>
+            <h1 style="text-align: center; padding-top: 5%;"><i class="fas fa-arrow-circle-right" style="color: white;"></i></h1>
+        </div>
+    </div>
+</body>
+
+</html>
